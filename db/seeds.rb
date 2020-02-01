@@ -1,27 +1,31 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
-
 Shelter.destroy_all
 
-shelter1 = Shelter.create(name: 'Pet Palace',
-                          address: '4231 Ponderosa Court',
-                          city: 'Boulder',
-                          state: 'CO',
-                          zip: '80301')
+# Pet.destroy_all
 
-shelter2 = Shelter.create(name: 'Xylia\'s Doggo Friends',
-                          address: '5723 Redwood Court',
-                          city: 'Boulder',
+shelter1 = Shelter.create(name: "Mike's Shelter",
+                          address: '1331 17th Street',
+                          city: 'Denver',
                           state: 'CO',
-                          zip: '80301')
+                          zip: '80202')
 
-shelter3 = Shelter.create(name: 'Zeus\'s Puppy Pals',
-                          address: '3734 Cedar Court',
-                          city: 'Boulder',
-                          state: 'CO',
-                          zip: '80301')
+shelter2 = Shelter.create(name: "Meg's Shelter",
+                          address: '150 Main Street',
+                          city: 'Hershey',
+                          state: 'PA',
+                          zip: '17033')
+
+# pet1 = Pet.create(image: 'https://cdn2-www.dogtime.com/assets/uploads/2011/03/puppy-development.jpg',
+#                   name: 'Athena',
+#                   description: 'butthead',
+#                   age: '1',
+#                   sex: 'female',
+#                   adoptable: 'yes',
+#                   shelter_id: shelter1.id)
+
+# pet2 = Pet.create(image: 'https://s.abcnews.com/images/Lifestyle/puppy-ht-3-er-170907_16x9_992.jpg',
+#                   name: 'Odell',
+#                   description: 'good dog',
+#                   age: '4',
+#                   sex: 'male',
+#                   adoptable: 'yes',
+#                   shelter_id: shelter2.id)

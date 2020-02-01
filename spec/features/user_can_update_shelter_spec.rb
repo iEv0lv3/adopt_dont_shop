@@ -22,7 +22,7 @@ RSpec.describe 'As a vistor', type: :feature do
 
       click_button 'Save'
 
-      visit "/shelters/#{shelter3.id}"
+      expect(current_path).to eq("/shelters/#{shelter3.id}")
 
       expect(page).to have_content(shelter3.name)
       expect(page).to have_content(shelter3.address)

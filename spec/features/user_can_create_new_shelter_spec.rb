@@ -17,7 +17,7 @@ RSpec.describe 'As a visitor', type: :feature do
 
       click_button('Create Shelter')
 
-      visit '/shelters'
+      expect(current_path).to eq('/shelters')
 
       new_shelter = Shelter.last
 
