@@ -6,6 +6,22 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-shelter1 = Shelter.create(name: 'Pet Palace')
-shelter2 = Shelter.create(name: 'Xylia\'s Puppy House')
-shelter2 = Shelter.create(name: 'Zeus\'s Puppy House')
+Shelter.destroy_all
+
+shelter1 = Shelter.create(name: 'Pet Palace',
+                          address: '4231 Ponderosa Court',
+                          city: 'Boulder',
+                          state: 'CO',
+                          zip: '80301')
+
+shelter2 = Shelter.create(name: 'Xylia\'s Doggo Friends',
+                          address: '5723 Redwood Court',
+                          city: 'Boulder',
+                          state: 'CO',
+                          zip: '80301')
+
+shelter3 = Shelter.create(name: 'Zeus\'s Puppy Pals',
+                          address: '3734 Cedar Court',
+                          city: 'Boulder',
+                          state: 'CO',
+                          zip: '80301')

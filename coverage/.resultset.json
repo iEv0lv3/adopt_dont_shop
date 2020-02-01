@@ -183,9 +183,84 @@
         null,
         null,
         1,
+        1,
+        1,
+        1,
         null
       ],
       "/Users/jww/turing/2module/projects/adopt_dont_shop/app/helpers/application_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/jww/turing/2module/projects/adopt_dont_shop/spec/features/user_can_visit_shelter_showpage_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/jww/turing/2module/projects/adopt_dont_shop/spec/features/user_visit_index_view_all_shelters_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/jww/turing/2module/projects/adopt_dont_shop/app/controllers/shelters_controller.rb": [
+        1,
+        1,
+        4,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        1,
+        null,
+        null,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/jww/turing/2module/projects/adopt_dont_shop/app/controllers/application_controller.rb": [
+        1,
         1,
         null
       ],
@@ -198,20 +273,8 @@
         1,
         1,
         null
-      ],
-      "/Users/jww/turing/2module/projects/adopt_dont_shop/app/controllers/shelters_controller.rb": [
-        1,
-        1,
-        1,
-        null,
-        null
-      ],
-      "/Users/jww/turing/2module/projects/adopt_dont_shop/app/controllers/application_controller.rb": [
-        1,
-        1,
-        null
       ]
     },
-    "timestamp": 1580443147
+    "timestamp": 1580534430
   }
 }
