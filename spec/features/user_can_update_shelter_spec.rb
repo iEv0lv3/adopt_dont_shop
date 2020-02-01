@@ -9,12 +9,11 @@ RSpec.describe 'As a vistor', type: :feature do
                                 state: 'CO',
                                 zip: '80301')
 
-      visit "/shleters/#{shelter3.id}"
+      visit "/shelters/#{shelter3.id}"
 
       click_link 'Update Shelter'
 
       visit "/shelters/#{shelter3.id}/edit"
-
       fill_in 'Name', with: shelter3.name
       fill_in 'Address', with: shelter3.address
       fill_in 'City', with: 'Denver'
@@ -25,9 +24,9 @@ RSpec.describe 'As a vistor', type: :feature do
 
       visit "/shelters/#{shelter3.id}"
 
-      expect(page).to have_content('Denver')
+      expect(page).to have_content(shelter3.name)
       expect(page).to have_content(shelter3.address)
-      expect(page).to have_content(shelter3.city)
+      expect(page).to have_content('City: Denver')
       expect(page).to have_content(shelter3.state)
       expect(page).to have_content(shelter3.zip)
     end
