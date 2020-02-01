@@ -29,6 +29,7 @@ RSpec.describe 'As a vistor', type: :feature do
       expect(page).to have_content('City: Denver')
       expect(page).to have_content(shelter3.state)
       expect(page).to have_content(shelter3.zip)
+      expect(page).not_to have_content("Xylia's Doggo Friends")
     end
   end
 end
