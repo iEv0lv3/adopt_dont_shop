@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe 'As a visitor', type: :feature do
   describe "When I click 'Create Pet'" do
-    it 'it adds an adoptable pet to the current shelter' do
+    it 'it adds a pet to the current shelter' do
       shelter3 = Shelter.create!(name: 'Zeus\'s Puppy Pals',
                                  address: '3734 Cedar Court',
                                  city: 'Boulder',
@@ -20,7 +20,7 @@ RSpec.describe 'As a visitor', type: :feature do
       fill_in 'Description', with: 'wild'
       fill_in 'Age', with: '3'
       fill_in 'Sex', with: 'male'
-      fill_in 'Adoptable', with: 'adoptable'
+      fill_in 'status', with: 'adoptable'
 
       click_button 'Create Pet'
 
@@ -33,7 +33,7 @@ RSpec.describe 'As a visitor', type: :feature do
       expect(page).to have_content(new_pet.description)
       expect(page).to have_content(new_pet.age)
       expect(page).to have_content(new_pet.sex)
-      expect(page).to have_content(new_pet.adoptable)
+      expect(page).to have_content(new_pet.status)
     end
   end
 end

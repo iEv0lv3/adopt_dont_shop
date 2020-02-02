@@ -14,14 +14,14 @@ RSpec.describe 'As a visitor', type: :feature do
                                    age: '5',
                                    sex: 'female',
                                    description: 'cool cool',
-                                   adoptable: 'yes')
+                                   status: 'adoptable')
 
       pet2 = shelter3.pets.create!(image: 'https://www.shutterstock.com/image-photo/brindled-plott-hound-puppy-on-dock-79691980',
                                    name: 'Zeus',
                                    age: '3',
                                    sex: 'male',
                                    description: 'wild',
-                                   adoptable: 'yes')
+                                   status: 'adoptable')
 
       visit "/shelters/#{shelter3.id}/pets"
 

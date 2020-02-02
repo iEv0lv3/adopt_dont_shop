@@ -14,7 +14,7 @@ RSpec.describe 'As a visitor', type: :feature do
                                    age: '5',
                                    sex: 'female',
                                    description: 'cool cool',
-                                   adoptable: 'yes')
+                                   status: 'adoptable')
 
       visit "/pets/#{pet1.id}"
 
@@ -23,7 +23,7 @@ RSpec.describe 'As a visitor', type: :feature do
       expect(page).to have_content(pet1.age)
       expect(page).to have_content(pet1.description)
       expect(page).to have_content(pet1.sex)
-      expect(page).to have_content(pet1.adoptable)
+      expect(page).to have_content(pet1.status)
     end
   end
 end

@@ -19,11 +19,11 @@ shelter1.pets.create!(image: 'https://cdn2-www.dogtime.com/assets/uploads/2011/0
                   description: 'butthead',
                   age: '1',
                   sex: 'female',
-                  adoptable: 'yes')
+                  status: 'adoptable')
 
 shelter2.pets.create!(image: 'https://s.abcnews.com/images/Lifestyle/puppy-ht-3-er-170907_16x9_992.jpg',
                   name: 'Odell',
                   description: 'good dog',
                   age: '4',
                   sex: 'male',
-                  adoptable: 'yes')
+                  status: 'adoptable')

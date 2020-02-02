@@ -28,7 +28,7 @@ class PetsController < ApplicationController
         :description,
         :age,
         :sex,
-        :adoptable,
+        :status,
         :shelter_id
       )
     end
