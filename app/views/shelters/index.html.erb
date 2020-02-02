@@ -7,6 +7,7 @@
       <p><%= shelter.address %></p>
       <p><%= shelter.city %>, <%= shelter.state %></p>
       <p><%= shelter.zip %></p>
+      <p id=<%= "shelter_#{shelter.id}" %>><%= link_to 'Edit Shelter', "/shelters/#{shelter.id}/edit" %></p>
     </div>
   <% end %>
 </div>
