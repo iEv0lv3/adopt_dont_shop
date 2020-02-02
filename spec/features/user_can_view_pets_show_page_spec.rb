@@ -1,8 +1,8 @@
 require 'rails_helper'
 
-RSpec.describe 'As a something', type: :feature_or_model do
-  describe 'When I do something' do
-    it 'it has this outcome' do
+RSpec.describe 'As a visitor', type: :feature do
+  describe "When I visit a pet's show page" do
+    it 'I see the pets attributes' do
       shelter3 = Shelter.create!(name: 'Zeus\'s Puppy Pals',
                                  address: '3734 Cedar Court',
                                  city: 'Boulder',
@@ -16,26 +16,14 @@ RSpec.describe 'As a something', type: :feature_or_model do
                                    description: 'cool cool',
                                    adoptable: 'yes')
 
-      pet2 = shelter3.pets.create!(image: 'https://www.shutterstock.com/image-photo/brindled-plott-hound-puppy-on-dock-79691980',
-                                   name: 'Zeus',
-                                   age: '3',
-                                   sex: 'male',
-                                   description: 'wild',
-                                   adoptable: 'yes')
+      visit "/pets/#{pet1.id}"
 
-      
+      expect(page).to have_css("img[src*='#{pet1.image}']")
+      expect(page).to have_content(pet1.name)
+      expect(page).to have_content(pet1.age)
+      expect(page).to have_content(pet1.description)
+      expect(page).to have_content(pet1.sex)
+      expect(page).to have_content(pet1.adoptable)
     end
   end
 end
-
-# User Story 9, Pet Show
-
-# As a visitor
-# When I visit '/pets/:id'
-# Then I see the pet with that id including the pet's:
-# - image
-# - name
-# - description
-# - approximate age
-# - sex
-# - adoptable/pending adoption status
