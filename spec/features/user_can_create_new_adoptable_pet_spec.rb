@@ -3,11 +3,13 @@ require 'rails_helper'
 RSpec.describe 'As a visitor', type: :feature do
   describe "When I click 'Create Pet'" do
     it 'it adds a pet to the current shelter' do
-      shelter3 = Shelter.create!(name: 'Zeus\'s Puppy Pals',
-                                 address: '3734 Cedar Court',
-                                 city: 'Boulder',
-                                 state: 'CO',
-                                 zip: '80301')
+      shelter3 = Shelter.create!(
+        name: 'Zeus\'s Puppy Pals',
+        address: '3734 Cedar Court',
+        city: 'Boulder',
+        state: 'CO',
+        zip: '80301'
+      )
 
       visit "/shelters/#{shelter3.id}/pets"
 
