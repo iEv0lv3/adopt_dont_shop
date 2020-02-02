@@ -8,6 +8,7 @@
       <p><%= shelter.city %>, <%= shelter.state %></p>
       <p><%= shelter.zip %></p>
       <p id=<%= "shelter_#{shelter.id}" %>><%= link_to 'Edit Shelter', "/shelters/#{shelter.id}/edit" %></p>
+      <p id=<%= "delete_#{shelter.id}" %>><%= link_to 'Delete', "/shelters/#{shelter.id}", method: :delete  %></p>
     </div>
   <% end %>
 </div>
