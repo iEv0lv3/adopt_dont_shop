@@ -16,7 +16,7 @@ RSpec.describe 'As a visitor', type: :feature do
                                    description: 'cool cool',
                                    adoptable: 'yes')
 
-      pet1 = shelter3.pets.create!(image: 'https://www.shutterstock.com/image-photo/brindled-plott-hound-puppy-on-dock-79691980',
+      pet2 = shelter3.pets.create!(image: 'https://www.shutterstock.com/image-photo/brindled-plott-hound-puppy-on-dock-79691980',
                                    name: 'Zeus',
                                    age: '3',
                                    sex: 'male',
@@ -29,6 +29,9 @@ RSpec.describe 'As a visitor', type: :feature do
       expect(page).to have_content(pet1.name)
       expect(page).to have_content(pet1.age)
       expect(page).to have_content(pet1.sex)
+      expect(page).to have_content(pet2.name)
+      expect(page).to have_content(pet2.age)
+      expect(page).to have_content(pet2.sex)
     end
   end
 end
