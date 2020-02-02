@@ -33,11 +33,3 @@ RSpec.describe 'As a visitor', type: :feature do
     end
   end
 end
-
-# User Story 14, Shelter Delete From Shelter Index Page
-
-# As a visitor
-# When I visit the shelter index page
-# Next to every shelter, I see a link to delete that shelter
-# When I click the link
-# I am returned to the Shelter Index Page where I no longer see that shelter

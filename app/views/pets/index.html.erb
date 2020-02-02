@@ -7,5 +7,6 @@
   <p><%= pet.sex %></p>
   <p><%= pet.description %></p>
   <p><%= pet.status %></p>
+  <p id=<%= "pet_#{pet.id}" %>><%= link_to 'Edit Pet', "/pets/#{pet.id}/edit" %></p>
   <p><%= @shelters.find(pet.shelter_id)[:name] %></p>
 <% end %>

@@ -302,14 +302,6 @@
         1,
         null,
         null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
         null
       ],
       "/Users/jww/turing/2module/projects/adopt_dont_shop/spec/features/user_can_delete_shelter_spec.rb": [
@@ -370,6 +362,36 @@
         1,
         1,
         1,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/jww/turing/2module/projects/adopt_dont_shop/spec/features/user_can_update_pet_from_index_page_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
         1,
         null,
         null,
@@ -700,8 +722,8 @@
       "/Users/jww/turing/2module/projects/adopt_dont_shop/app/controllers/pets_controller.rb": [
         1,
         1,
-        2,
-        2,
+        3,
+        3,
         null,
         null,
         1,
@@ -720,7 +742,7 @@
         null,
         null,
         1,
-        1,
+        2,
         null,
         null,
         1,
@@ -752,6 +774,6 @@
         null
       ]
     },
-    "timestamp": 1580678150
+    "timestamp": 1580679824
   }
 }
