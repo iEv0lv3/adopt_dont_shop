@@ -9,7 +9,7 @@ RSpec.describe 'As a visitor', type: :feature do
                                  state: 'CO',
                                  zip: '80301')
 
-      pet1 = shelter3.pets.create!(image: 'https://www.shutterstock.com/image-photo/brindled-plott-hound-puppy-on-dock-79691980',
+      pet1 = shelter3.pets.create!(image: 'https://image.shutterstock.com/image-photo/brindled-plott-hound-puppy-on-600w-79691980.jpg',
                                    name: 'Xylia',
                                    age: '5',
                                    sex: 'female',
