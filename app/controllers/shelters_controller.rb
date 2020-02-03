@@ -31,7 +31,7 @@ class SheltersController < ApplicationController
   end
 
   def pets_index
-    @shelter = Shelter.find(params[:id])
+    @shelter = Shelter.find(shelter_params[:id])
   end
 
   private
@@ -42,7 +42,8 @@ class SheltersController < ApplicationController
       :address,
       :city,
       :state,
-      :zip
+      :zip,
+      :id
     )
   end
 end

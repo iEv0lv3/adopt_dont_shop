@@ -14,7 +14,7 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2020-02-02T18:29:09-07:00">2020-02-02T18:29:09-07:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2020-02-02T20:13:53-07:00">2020-02-02T20:13:53-07:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -25,7 +25,7 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.24
+         1.26
        </span>
     </span> hits/line)
   </h2>
@@ -73,11 +73,11 @@
       <tr>
         <td class="strong"><a href="#5f3279f903ad3433f8de6cca9188b78d032d56c9" class="src_link" title="app/controllers/shelters_controller.rb">app/controllers/shelters_controller.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>48</td>
+        <td>49</td>
         <td>22</td>
         <td>22</td>
         <td>0</td>
-        <td>3.3</td>
+        <td>3.7</td>
       </tr>
       
       <tr>
@@ -1091,7 +1091,7 @@
         <li class="covered" data-hits="9" data-linenumber="34">
           <span class="hits">9</span>
           
-          <code class="ruby">    @shelter = Shelter.find(params[:id])</code>
+          <code class="ruby">    @shelter = Shelter.find(shelter_params[:id])</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="35">
@@ -1124,8 +1124,8 @@
           <code class="ruby">  def shelter_params</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="40">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="11" data-linenumber="40">
+          <span class="hits">11</span>
           
           <code class="ruby">    params.permit(</code>
         </li>
@@ -1157,22 +1157,28 @@
         <li class="never" data-hits="" data-linenumber="45">
           
           
-          <code class="ruby">      :zip</code>
+          <code class="ruby">      :zip,</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="46">
           
           
-          <code class="ruby">    )</code>
+          <code class="ruby">      :id</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="47">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby">    )</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="48">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="49">
           
           
           <code class="ruby">end</code>
