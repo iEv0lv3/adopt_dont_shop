@@ -1,8 +1,8 @@
 require 'rails_helper'
 
 RSpec.describe 'As a visitor', type: :feature do
-  describe 'When I see a shelter name anywhere on the site' do
-    it 'I can click it to access the shelter show page' do
+  describe 'When I see a pet name anywhere on the site' do
+    it 'I can click it to access the pet show page' do
       shelter1 = Shelter.create(name: 'Xylia\'s Doggo Friends',
                                 address: '3734 Ponderosa Court',
                                 city: 'Boulder',
@@ -16,20 +16,26 @@ RSpec.describe 'As a visitor', type: :feature do
                                    description: 'cool cool',
                                    status: 'adoptable')
 
-      visit '/shelters'
-      expect(page).to have_link("#{shelter1.name}")
-
       visit "/shelters/#{shelter1.id}/pets"
-      expect(page).to have_link("#{shelter1.name}")
+      expect(page).to have_link("#{pet1.name}")
+      click_link "#{pet1.name}"
+      expect(current_path).to eq("/pets/#{pet1.id}")
 
-      visit "/shelters/#{shelter1.id}/edit"
-      expect(page).to have_link("#{shelter1.name}")
+      visit "/pets/#{pet1.id}/edit"
+      expect(page).to have_link("#{pet1.name}")
+      click_link "#{pet1.name}"
+      expect(current_path).to eq("/pets/#{pet1.id}")
 
       visit "/pets"
-      expect(page).to have_link("#{shelter1.name}")
-
-      visit "/pets/#{pet1.id}"
-      expect(page).to have_link("#{shelter1.name}")
+      expect(page).to have_link("#{pet1.name}")
+      click_link "#{pet1.name}"
+      expect(current_path).to eq("/pets/#{pet1.id}")
     end
   end
 end
+
+# User Story 18, Pet Links
+
+# As a visitor
+# When I click on the name a pet anywhere on the site
+# Then that link takes me to that Pet's show page

@@ -2,7 +2,7 @@
 
 <%= @shelter.pets.each do |pet| %>
   <%= image_tag(pet.image) %>
-  <p><%= pet.name %></p>
+  <p><%= link_to "#{pet.name}", "/pets/#{pet.id}" %></p>
   <p><%= pet.age %></p>
   <p><%= pet.sex %></p>
   <p id=<%= "delete_#{pet.id}" %>><%= link_to 'Delete', "/shelters/#{@shelter.id}/pets/#{pet.id}", method: :delete %></p>
