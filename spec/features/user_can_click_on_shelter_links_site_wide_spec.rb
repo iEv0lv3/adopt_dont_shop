@@ -18,18 +18,28 @@ RSpec.describe 'As a visitor', type: :feature do
 
       visit '/shelters'
       expect(page).to have_link("#{shelter1.name}")
+      click_link "#{shelter1.name}"
+      expect(current_path).to eq("/shelters/#{shelter1.id}")
 
       visit "/shelters/#{shelter1.id}/pets"
       expect(page).to have_link("#{shelter1.name}")
+      click_link "#{shelter1.name}"
+      expect(current_path).to eq("/shelters/#{shelter1.id}")
 
       visit "/shelters/#{shelter1.id}/edit"
       expect(page).to have_link("#{shelter1.name}")
+      click_link "#{shelter1.name}"
+      expect(current_path).to eq("/shelters/#{shelter1.id}")
 
       visit "/pets"
       expect(page).to have_link("#{shelter1.name}")
+      click_link "#{shelter1.name}"
+      expect(current_path).to eq("/shelters/#{shelter1.id}")
 
       visit "/pets/#{pet1.id}"
       expect(page).to have_link("#{shelter1.name}")
+      click_link "#{shelter1.name}"
+      expect(current_path).to eq("/shelters/#{shelter1.id}")
     end
   end
 end
