@@ -22,7 +22,6 @@ RSpec.describe 'As a visitor', type: :feature do
       fill_in 'Description', with: 'wild'
       fill_in 'Age', with: '3'
       fill_in 'Sex', with: 'male'
-      fill_in 'status', with: 'adoptable'
 
       click_button 'Create Pet'
 

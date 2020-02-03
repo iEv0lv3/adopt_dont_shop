@@ -6,6 +6,7 @@ class PetsController < ApplicationController
 
   def show
     @pet = Pet.find(params[:id])
+    @shelter = Shelter.find(@pet.shelter_id)
   end
 
   def new

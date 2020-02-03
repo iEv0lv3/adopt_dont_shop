@@ -7,7 +7,7 @@
   <p><%= pet.sex %></p>
   <p><%= pet.description %></p>
   <p><%= pet.status %></p>
+  <p><%= link_to "#{@shelters.find(pet.shelter_id)[:name]}", "/shelters/#{pet.shelter_id}" %></p>
   <p id=<%= "pet_#{pet.id}" %>><%= link_to 'Edit Pet', "/pets/#{pet.id}/edit" %></p>
   <p id=<%= "delete_#{pet.id}" %>><%= link_to 'Delete', "/pets/#{pet.id}", method: :delete %></p>
-  <p><%= @shelters.find(pet.shelter_id)[:name] %></p>
 <% end %>

@@ -3,7 +3,7 @@
 <div class="shelterBox">
   <% @shelters.each do |shelter| %>
     <div class="shelterContentBox">
-      <h3><%= link_to "#{shelter.name}", "shelters/#{shelter.id}" %> </h3>
+      <h3><%= link_to "#{shelter.name}", "shelters/#{shelter.id}" %></h3>
       <p><%= shelter.address %></p>
       <p><%= shelter.city %>, <%= shelter.state %></p>
       <p><%= shelter.zip %></p>
