@@ -33,9 +33,3 @@ RSpec.describe 'As a visitor', type: :feature do
     end
   end
 end
-
-# User Story 18, Pet Links
-
-# As a visitor
-# When I click on the name a pet anywhere on the site
-# Then that link takes me to that Pet's show page
